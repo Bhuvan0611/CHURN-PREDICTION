@@ -158,19 +158,6 @@ RocCurveDisplay.from_estimator(model, X_test, y_test)
 
 ---
 
-# 📦 Recommended Project Structure
-
--churn-detection/
--│── data/
--│── notebooks/
--│── models/
--│── plots/
--│── src/
--│── README.md
--│── requirements.txt
-
----
-
 # 📚 Requirements
 
 - numpy
