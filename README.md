@@ -1,9 +1,9 @@
-📘 Customer Churn Prediction – Final README (All Models Tuned)
+# 📘 Customer Churn Prediction – Final README (All Models Tuned)
 
 This repository contains a complete end-to-end machine learning pipeline for predicting telecom customer churn.
 It includes data preprocessing, EDA, feature engineering, six individually tuned ML models, and performance evaluation using ROC-AUC and confusion matrices.
 
-🚀 Project Overview
+# 🚀 Project Overview
 
 The goal of this project is to predict whether a customer will churn (leave the service) using historical data such as:
 
@@ -19,7 +19,7 @@ Tenure & account details
 
 This pipeline follows a production-style workflow suitable for real-world ML applications.
 
-✨ Key Features
+# ✨ Key Features
 
 Full data cleaning & preprocessing
 
@@ -37,7 +37,8 @@ Clean, silent training (no warnings/log spam)
 
 Modern scikit-learn plotting APIs
 
-🧹 Data Preprocessing
+#🧹 Data Preprocessing
+
 ✔ Missing Value Handling
 
 Numerical → median / mean
@@ -66,7 +67,7 @@ Handled using:
 
 class_weight="balanced"
 
-📊 Exploratory Data Analysis (EDA)
+# 📊 Exploratory Data Analysis (EDA)
 
 You performed:
 
@@ -104,7 +105,7 @@ Used for removing redundant variables.
 
 Extracted from tree-based models.
 
-🧠 Machine Learning Models Used (ALL Tuned)
+# 🧠 Machine Learning Models Used (ALL Tuned)
 
 You trained 6 tuned models — each hyperparameter optimized separately:
 
@@ -124,7 +125,7 @@ CatBoost Classifier
 ✔ No SVM / No Logistic Regression
 ✔ All tuned parameters were pasted directly from your tuning notebook
 
-⚙️ Training Workflow
+# ⚙️ Training Workflow
 
 Train Set: Model training
 
@@ -140,7 +141,7 @@ AUC as evaluation metric
 
 Callback-based clean logging
 
-📈 Evaluation Metrics
+# 📈 Evaluation Metrics
 
 All models were evaluated using:
 
@@ -160,7 +161,8 @@ RocCurveDisplay.from_estimator(model, X_test, y_test)
 Modern Confusion Matrix Code
 ConfusionMatrixDisplay.from_estimator(model, X_test, y_test)
 
-📘 Dataset Description
+# 📘 Dataset Description
+
 ✔ Dataset Contains
 
 Demographic information
@@ -177,7 +179,7 @@ Churn label (0 or 1)
 
 ✔ Dataset Size
 
-Approximately 40,000+ rows
+Approximately 50,000+ rows
 
 Around 50+ processed features after encoding
 
@@ -193,14 +195,20 @@ Correlation filtering
 
 Imbalance handling
 
-🏆 Final Model Results
+# 🏆 Final Model Results
 
 <img width="293" height="292" alt="image" src="https://github.com/user-attachments/assets/41442412-c785-4d15-bed5-9a3ae5d8f09a" />
+
+
+
+
+
 
 <img width="281" height="277" alt="image" src="https://github.com/user-attachments/assets/851985d2-1017-4e3a-b8c5-c761cc0bb8a2" />
 
 
-📦 Recommended Project Structure
+#📦 Recommended Project Structure
+
 churn-detection/
 │── data/
 │── notebooks/
@@ -210,7 +218,8 @@ churn-detection/
 │── README.md
 │── requirements.txt
 
-📚 Requirements
+#📚 Requirements
+
 numpy
 pandas
 matplotlib
@@ -222,9 +231,7 @@ catboost
 joblib
 jupyter
 
-🔮 Future Improvements
-
-Add SHAP interpretability
+#🔮 Future Improvements
 
 Deploy with FastAPI
 
